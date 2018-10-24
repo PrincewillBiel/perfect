@@ -8,13 +8,13 @@ In continuing our promise towards investors in assuring their mining is conducte
 mining day. This is important as you never actually buy an asset when you purchase a mining option; you are simply making a speculative investment on an assets behavior over a set period of time. Mining options have gained much popularity in recent years, due to their simple up/down nature, the low cost required to participate and the increased return on investment profits (ROI).
 
 They are now more accessible and successful than ever, and we provide an incredible opportunity for investors to earn vast profit in a space of one month.
-The content of this terms of service is for information purposes to guide the stakeholders and investors as they sign up with eToro Fiancial Services. The terms and conditions of this agreement, and its acceptance of investor’s application to open and have a managed account with PERFECT FUNDING. This company/platform will maintain one account in customer’s name, and will effect cash settled transaction with and for the customer, and provide such other services and products, as eToro platform may.
+The content of this terms of service is for information purposes to guide the stakeholders and investors as they sign up with Perfect Funding LTD. The terms and conditions of this agreement, and its acceptance of investor’s application to open and have a managed account with PERFECT FUNDING. This company/platform will maintain one account in customer’s name, and will effect cash settled transaction with and for the customer, and provide such other services and products, as Perfect Funding platform may.
 
-Before you can become an investor under PERFECT FUNDING, you have to first register yourself, choosing any of the different investment packages/account types we offer. On completion of registration, your account will be verified, and a trader/account manager assigned to you. To start mining with us, the investor must fund his/her account with the minimum deposit of $300, and the maximum deposit of $1,000,000(One Million Dollars), which falls under the different investment packages/account types we offer.
+Before you can become an investor under PERFECT FUNDING, you have to first register yourself, choosing any of the different investment packages/account types we offer. On completion of registration, your account will be verified, and a trader/account manager assigned to you. To start mining with us, the investor must fund his/her account with the minimum deposit of $1000, and the maximum deposit of $100,000(One Hundred Thousand Dollars), which falls under the different investment packages/account types we offer.
 After period of trade of selected package, investors are eligible for withdrawal or rolling over of their accounts (compounding). Investors are advised to notify their traders three days before withdrawal.
       <h3 class="h3style">ANTI-Money LAUNDERING POLICY</h3>
-PERFECT FUNDING does not tolerate money laundering and supports the fight against money launders. eToro Fiancial Services follows the guidelines set by the Germany’s joint money laundering steering group. The Germany’s is a full member of the Financial Action Task Force(FATF), the intergovernmental body whose purpose is to combat money laundering and terrorist financing.
-eToro Fiancial Services now has policies in place to deter people from laundering money.
+PERFECT FUNDING does not tolerate money laundering and supports the fight against money launders. Perfect Funding LT follows the guidelines set by the United States’s joint money laundering steering group. The United States’s is a full member of the Financial Action Task Force(FATF), the intergovernmental body whose purpose is to combat money laundering and terrorist financing.
+Perfect Funding LT now has policies in place to deter people from laundering money.
 
 These policies include:
       <ul>
@@ -33,9 +33,9 @@ Money Laundering Usually follows three stages:
         <li>And finally, the funds are re-introduced into the economy so that the funds appear to have come from legitimate sources (e.g. closing a futures account and transferring the funds to a bank account).</li>
       </ul>
 Mining accounts are one vehicle that can be used to launder illicit funds or to hide the true owner of the funds. In particular, a mining account can be used to execute financial transactions that help obscure the origins of the funds.
-eToro Fiancial Services direct funds withdrawal back to the original source of remittance, as a preventive measure.
+Perfect Funding LT direct funds withdrawal back to the original source of remittance, as a preventive measure.
 International Anti-money Laundering requires financial services institutions to be aware of potential money laundering abuses that could occur in a customer account and implement a compliance program to deter, detect and report potential suspicious activity.
-These guidelines have been implemented to protect eToro Fiancial Services and its clients.
+These guidelines have been implemented to protect Perfect Funding LT and its clients.
 
 HAPPY INVESTING!!!
     <h3 class="h3style">LICENSING AND REGULATION</h3>
