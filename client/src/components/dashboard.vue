@@ -5,10 +5,10 @@
         <div class="topnav">
           <a class="name">{{ response.data.name }}</a>
           <div id="myLinks">
-            <a href="javascript:void(0)" @click="currentView='Home'">Dashboard</a>
-            <a href="javascript:void(0)" @click="currentView='Profile'">Profile</a>
-            <a href="javascript:void(0)" @click="currentView='Account'">Fund Account</a>
-            <a href="javascript:void(0)" @click="currentView='Notify'">Notifications</a>
+            <a href="javascript:void(0)" @click="home">Dashboard</a>
+            <a href="javascript:void(0)" @click="profile">Profile</a>
+            <a href="javascript:void(0)" @click="account">Fund Account</a>
+            <a href="javascript:void(0)" @click="notify">Notifications</a>
             <a href="javascript:void(0)" @click="drop()">External Links</a>
             <div v-show="accordion" class="level">
               <a href="https://www.youtube.com/watch?v=fOMVZXLjKYo" target="_blank">What are cryptocurrencies?</a>
@@ -19,8 +19,8 @@
               <v-divider></v-divider>
               <a href="https://www.bitcoin.com/buy-bitcoin" target="_blank">Where to buy bitcoins</a>
             </div>
-            <a href="javascript:void(0)" @click="currentView='Withdraw'">Withdraw Funds</a>
-            <a href="javascript:void(0)" @click="currentView='Settings'">Settings</a>
+            <a href="javascript:void(0)" @click="withdraw">Withdraw Funds</a>
+            <a href="javascript:void(0)" @click="settings">Settings</a>
           </div>
           <a href="javascript:void(0)" class="icon" @click="openCanvas()">
             <i class="fas fa-caret-square-down "></i>
@@ -193,6 +193,14 @@ export default {
     this.accordion = false
   },
   methods: {
+    async fetchUser () {
+      try {
+        this.response = await tokenApi.fetchWithToken('/api/user/')
+      } catch (error) {
+        this.error = error.response.data.error
+      }
+    },
+    // mobile
     async drop () {
       if (this.accordion === true) {
         this.accordion = false
@@ -200,13 +208,6 @@ export default {
         if (this.accordion === false) {
           this.accordion = true
         }
-      }
-    },
-    async fetchUser () {
-      try {
-        this.response = await tokenApi.fetchWithToken('/api/user/')
-      } catch (error) {
-        this.error = error.response.data.error
       }
     },
     openCanvas () {
@@ -219,14 +220,35 @@ export default {
         // x.style.co
       }
     },
+    account () {
+      this.currentView = 'Account'
+      this.closeCanvas()
+    },
+    home () {
+      this.currentView = 'Home'
+      this.closeCanvas()
+    },
+    notify () {
+      this.currentView = 'Notify'
+      this.closeCanvas()
+    },
+    profile () {
+      this.currentView = 'Profile'
+      this.closeCanvas()
+    },
+    settings () {
+      this.currentView = 'Settings'
+      this.closeCanvas()
+    },
+    withdraw () {
+      this.currentView = 'Withdraw'
+      this.closeCanvas()
+    },
     closeCanvas () {
       var x = document.getElementById('myLinks')
       if (x.style.display === 'block') {
         x.style.display = 'none'
       }
-    },
-    navigateTo (route) {
-      this.closeCanvas()
     }
   },
   components: {

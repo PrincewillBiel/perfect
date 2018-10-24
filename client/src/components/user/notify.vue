@@ -51,17 +51,17 @@ export default {
         {
           id: 2,
           title: 'CRUCIAL UPDATE',
-          body: 'We wish to reinstate our commitment to effective customer service deliver and world class trading services. We also want to assure you that we are doing everything possible to ensure that we get rid of unscrupulous activities on th cryptocurrency global system. We always advise customers to NEVER send money to any individual provided wallets except from those on our website or otherwise provided by our official admin email on our website. Customers who do so, do so at their own risk. We remain reputable in our commitment to quality trading services. If you suspect any unwholesome practices, please don’t hesitate to write our support. Thanks a lot for making Perfect Options your preferred choice.'
+          body: 'We wish to reinstate our commitment to effective customer service and world class investment services. We always advise customers to NEVER send money to any individual provided wallets except from those on our website or otherwise provided by our official admin email on our website. Customers who do so, do so at their own risk. If you suspect any unwholesome practices, do not hesitate to write our support.'
         },
         {
           id: 3,
           title: 'IMPORTANT MESSAGE',
-          body: 'Do not make payments to any external accounts or wallet address provided by any individuals (both from our workers, traders, account managers). In any case, please make sure you confirm from our official support email address. Always crosscheck the email address is same as that on our website before responding or replying to any email. If you have any issues, contact our customer care “support@perfectfunding.org We wish you a successful trading experience.'
+          body: 'Do not make payments to any external accounts or wallet address provided by any individuals (both from our workers, traders, account managers). In any case, please make sure you confirm from our official support email address. Always crosscheck the email address is same as that on our website before responding or replying to any email. If you have any issues, contact our customer care support@perfectfunding.org.'
         },
         {
           id: 4,
           title: 'PAYMENTS AND FUNDS',
-          body: 'We do have staffs, but if anyone ever instructs you to make payment to any wallet address, email, or account individually or different from those provided only within our website or otherwise ONLY from our official email support@perfectoptions.org then it is SCAM. Please be vigilant and help us fight these crimes.'
+          body: 'We do have staffs, but if anyone ever instructs you to make payment to any wallet address, email, or account individually or different from those provided only within our website or otherwise ONLY from our official email support@perfectfunding.org then it is SCAM. Please be vigilant and help us fight these crimes.'
         }
       ],
       page: 'Notifications',
@@ -103,7 +103,7 @@ export default {
   font-weight: 600
 }
 .circles {
-  margin-bottom: 14em
+  margin-bottom: 33em
 }
 .in-head {
   color: #757575
@@ -122,12 +122,15 @@ export default {
 .message {
   background-color: #0277BD;
   color: #FFF;
-  height: 15em;
+  height: 34em;
   padding: 1em;
   width: 90%
 }
-.message-body {
+.message h2 {
   font-size: 1em
+}
+.message-body {
+  font-size: 1.1em
 }
 .outer {
   background-color: #BDBDBD;
@@ -143,6 +146,28 @@ export default {
   flex-flow: row wrap;
   margin-bottom: 2em
 }
+@media (min-width: 400px) {
+  .circles {
+    margin-bottom: 22em
+  }
+  .message {
+    height: 23em
+  }
+}
+@media (min-width: 600px) {
+  .circles {
+    margin-bottom: 23em
+  }
+  .message {
+    height: 24em
+  }
+  .message h2 {
+    font-size: 1.2em
+  }
+  .message-body {
+    font-size: 1.12em
+  }
+}
 @media (min-width: 750px) {
   .arrow-right {
     border-top: 0.7em solid transparent;
@@ -157,7 +182,7 @@ export default {
     font-size: 2em
   }
   .circles {
-    margin-bottom: 13em
+    margin-bottom: 25em
   }
   .f-icon {
     font-size: 1.7em
@@ -171,14 +196,15 @@ export default {
     width: 79%
   }
   .message {
-    background-color: #424242;
-    color: #FFF;
-    height: 15em;
+    height: 27em;
     padding: 1em;
     width: 80%
   }
-  .message-body {
+  .message h2 {
     font-size: 1.2em
+  }
+  .message-body {
+    font-size: 1.15em
   }
   .outer {
     background-color: #BDBDBD;
@@ -193,6 +219,22 @@ export default {
     display: flex;
     flex-flow: row wrap;
     margin-bottom: 2em
+  }
+}
+@media (min-width: 800px) {
+  .message-body {
+    font-size: 1.2em
+  }
+}
+@media (min-width: 960px) {
+  .circles {
+    margin-bottom: 21em
+  }
+  .message {
+    height: 23em;
+  }
+  .message-body {
+    font-size: 1.3em
   }
 }
 </style>

@@ -47,9 +47,8 @@ keystone.set('brandDetails', {
   brand: 'Perfect Funding',
   mailAddress: '',
   homepageUrl: 'http://www.perfectfunding.org/',
-  phone: '',
-  phone2: '',
-  emailLogoUrl: 'http://www.perfectfunding.org/static/img/efs.png',
+  phone: '+1 (334) 819-1740',
+  emailLogoUrl: 'http://www.perfectfunding.org/static/img/pflogo.png',
 });
 
 // Configure the navigation bar in Keystone's Admin UI

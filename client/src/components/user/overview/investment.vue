@@ -20,7 +20,7 @@
            <td>{{ investment.form }}</td>
            <td>{{ investment.plan }}</td>
            <td>${{ investment.amount }}</td>
-           <td>{{ investment.days }} of {{ investment.duration }}</td>
+           <td>{{ investment.days }}</td>
            <td>{{ investment.status }}</td>
            <td>${{ investment.growth }}</td>
            <td>${{ investment.less }}</td>

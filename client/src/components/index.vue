@@ -1,19 +1,22 @@
-<template id="">
+﻿<template id="">
   <v-layout row wrap>
     <v-flex xs12 id="carousel" class="carousel">
-      <div class="words">
-        <transition name="slide-fade" tag='div'>
-          <div
-            v-for="number in [currentNumber]"
-            :key='number'
-            >
-          <p>{{ currentWords }}</p>
-          </div>
-        </transition>
-        <v-btn ripple class="ca-btn" style="background: #0277BD; border: 1px solid #FFB300; color: #FFB300" v-if="!$store.state.isUserLoggedIn" @click="navigateTo({name: 'Signup'})">Start Earning!</v-btn>
-        <v-btn ripple class="ca-btn" style="background: #0277BD; border: 1px solid #FFB300; color: #FFB300" v-if="$store.state.isUserLoggedIn" @click="navigateTo({name: 'Dashboard'})">Start Earning!</v-btn>
-      </div>
-      <!--<v-flex xs12 class="cover"></v-flex>-->
+      <v-flex xs12 class="cover">
+        <div class="words">
+          <transition name="slide-fade" tag='div'>
+            <div
+              v-for="number in [currentNumber]"
+              :key='number'
+              >
+            <p>{{ currentWords }}</p>
+            </div>
+          </transition>
+        </div>
+        <div class="btn-holder">
+          <v-btn ripple class="ca-btn" style="background: #0277BD; border: 1px solid #FFB300; color: #FFB300; font-weight: 1000" v-if="!$store.state.isUserLoggedIn" @click="navigateTo({name: 'Signup'})">Start Earning!</v-btn>
+          <v-btn ripple class="ca-btn" style="background: #0277BD; border: 1px solid #FFB300; color: #FFB300" v-if="$store.state.isUserLoggedIn" @click="navigateTo({name: 'Dashboard'})">Start Earning!</v-btn>
+        </div>
+      </v-flex>
       <image-slider>
         <transition-group name='fade' tag='anime' class="anime">
           <div
@@ -83,44 +86,52 @@ Join us now and we will share our success with you! Happy Investing!
 
   <v-flex xs12 class="listing">
     <v-layout row wrap>
-      <v-flex xs11 sm5 md3 mx-auto class="listing-div" style="background: #0277BD">
+      <v-flex xs11 sm5 md4 mx-auto class="listing-div" style="background: #0277BD">
         <h2>SILVER</h2>
-        <h3 style="color: #FFB300; text-align: center">30% ROI Per Week</h3>
+        <h3 style="color: #FFB300; text-align: center">30% Weekly Profit</h3>
         <div>
-          <div class="inv">Minimum Investment: $1000</div>
-          <div class="inv">Maximum Investment: $9000</div>
-          <div class="inv">Mining Duration: 7 Days</div>
+          <div class="inv">Minimum Deposit: $1000</div>
+          <div class="inv">Maximum Deposit: $9000</div>
+          <div class="inv">Money-back Guarantee: 100%</div>
           <div class="inv">Referral Bonus: 5%</div>
         </div>
       </v-flex>
-      <v-flex xs11 sm5 md3 mx-auto class="listing-div" style="background: #040D14">
+      <v-flex xs11 sm5 md4 mx-auto class="listing-div" style="background: #040D14">
         <h2 style="color: #FFB300">GOLD</h2>
-        <h3 style="color: #0277BD; text-align: center">50% ROI Per Week</h3>
+        <h3 style="color: #0277BD; text-align: center">50% Weekly Profit</h3>
         <div>
-          <div class="inv-alt">Minimum Investment: $10000</div>
-          <div class="inv-alt">Maximum Investment: $49000</div>
-          <div class="inv-alt">Mining Duration: 7 Days</div>
+          <div class="inv-alt">Minimum Deposit: $10000</div>
+          <div class="inv-alt">Maximum Deposit: $49000</div>
+          <div class="inv-alt">Money-back Guarantee: 100%</div>
           <div class="inv-alt">Referral Bonus: 10%</div>
         </div>
       </v-flex>
-      <v-flex xs11 sm5 md3 mx-auto class="listing-div" style="background: #0277BD">
+      <v-flex xs11 sm5 md4 mx-auto class="listing-div" style="background: #0277BD">
         <h2>DIAMOND</h2>
-        <h3 style="color: #FFB300; text-align: center">100% ROI Per Week</h3>
+        <h3 style="color: #FFB300; text-align: center">100% Weekly Profit</h3>
         <div>
-          <div class="inv">Minimum Investment: $50000</div>
-          <div class="inv">Maximum Investment: $90000</div>
-          <div class="inv">Mining Duration: 7 Days</div>
+          <div class="inv">Minimum Deposit: $50000</div>
+          <div class="inv">Maximum Deposit: $90000</div>
+          <div class="inv">Money-back Guarantee: 100%</div>
           <div class="inv">Referral Bonus: 15%</div>
         </div>
       </v-flex>
-      <v-flex xs11 sm5 md3 mx-auto class="listing-div" style="background: #040D14">
+      <v-flex xs11 sm5 md4 mx-auto class="listing-div" style="background: #040D14">
         <h2 style="color: #FFB300">LIFETIME</h2>
-        <h3 style="color: #0277BD; text-align: center">10% ROI Daily Per Year</h3>
+        <h3 style="color: #0277BD; text-align: center">10% Weekly Profit</h3>
         <div>
-          <div class="inv-alt">Minimum Investment: $100000</div>
-          <div class="inv-alt">Maximum Investment: Varied</div>
+          <div class="inv-alt">Minimum Deposit: $100000</div>
+          <div class="inv-alt">Maximum Deposit: Varied</div>
           <div class="inv-alt">Mining Duration: 365 Days</div>
           <div class="inv-alt">Referral Bonus: 20%</div>
+        </div>
+      </v-flex>
+      <v-flex xs11 sm5 md4 mx-auto class="listing-div" style="background: #0277BD; padding-left: 2%">
+        <h2 style="color: #040D14">SPECIAL OFFER</h2>
+        <div>
+          <div class="inv-alt">Deposit: 1 BTC to earn 0.5BTC</div>
+          <div class="inv-alt">Mining Duration: 24 hours for 30 Days</div>
+          <div class="inv-alt" style="color: #040D14">Contact support if interested in this plan.</div>
         </div>
       </v-flex>
     </v-layout>
@@ -202,11 +213,11 @@ Perfect Funding is an investment management company that deals in cryptocurrency
 
   <v-flex xs12 mt-3 style="background: #FFF">
     <carousel :autoplay="true" :loop="true" :nav="false" :dots="false">
-      <div class="logos-1"><img src="/static/img/standard.png"></div>
-      <div class="logos-2"><img src="/static/img/citigroup.png"></div>
-      <div class="logos-3"><img src="/static/img/berkshire.jpg"></div>
-      <div class="logos-4"><img src="/static/img/bnp.png"></div>
-      <div class="logos-5"><img src="/static/img/bitmain2.png"></div>
+      <div class="logos-1" style="background: #FFF"><img src="/static/img/standard.png"></div>
+      <div class="logos-2" style="background: #FFF"><img src="/static/img/citigroup.png"></div>
+      <div class="logos-3" style="background: #FFF"><img src="/static/img/berkshire.jpg"></div>
+      <div class="logos-4" style="background: #FFF"><img src="/static/img/bnp.png"></div>
+      <div class="logos-5" style="background: #FFF"><img src="/static/img/bitmain2.png"></div>
     </carousel>
   </v-flex>
 
@@ -343,10 +354,12 @@ export default {
 .cover{
   height: 30em;
   width: 100%;
-  background: #0277BD;
-  opacity: 0.3;
+  background: #B3E5FC;
+  opacity: 0.8;
+  padding-top: 5em;
   position: absolute;
   font-size: 1em;
+  text-align: center
 }
 .crypt-1, .crypt-2{
   background: #FFB300
@@ -565,7 +578,7 @@ export default {
   background: #040D14
 }
 .reason{
-  border: 1px solid #424242;
+  border: 1px solid #FFB300;
   margin-bottom: 2em;
   padding: 2.5em 1em;
   font-size: 1.3em;
@@ -680,12 +693,11 @@ export default {
   text-align: center
 }
 .words{
-  color: #FFB300;
+  color: #FF6F00;
   font-size: 1.5em;
   font-weight: 900;
   height: 4em;
   margin-top: 3em;
-  position: absolute;
   padding: 1em 1em;
   width: 100%
 }
@@ -705,7 +717,8 @@ export default {
     height: 35em
   }
   .cover{
-    height: 3em
+    height: 35em;
+    padding-top: 5em
   }
   .fa-quote-left{
     font-size: 1.5em;
@@ -759,15 +772,14 @@ export default {
     font-size: 1.2em;
   }
   .reason-1{
-    border-right: 1px solid #FFF
+    border-right: 1px solid #FFB300
   }
   .reason-4{
-    border-bottom: 1px solid #FFF
+    border-bottom: 1px solid #FFB300
   }
   .words {
     height: 6em;
     width: 100%;
-    margin-top: 12em;
     padding: 1em 1em;
     font-size: 2em;
   }
@@ -790,7 +802,12 @@ export default {
     height: 45em
   }
   .cover {
-    height: 50em
+    /* height: 45em;
+    padding-top: 30em;
+    text-align: center */
+    height: 45em;
+    padding-top: 15em;
+    text-align: center
   }
   .fa-quote-left{
     font-size: 3em;
@@ -822,7 +839,7 @@ export default {
     font-size: 2em
   }
   .listing {
-    height: 35em;
+    height: auto;
     padding-top: 4em
   }
   .listing-div {
@@ -832,7 +849,7 @@ export default {
   .listing div {
     font-size: 1.1em;
     margin-bottom: 1em;
-    padding-left: 1.2%
+    padding-left: 3%
   }
   .listing h2 {
     padding-bottom: 1.2em
@@ -864,11 +881,11 @@ export default {
     font-size: 1.5em
   }
   .reason-2 {
-    border-bottom: 0.5px solid #424242;
+    border-bottom: 0.5px solid #FFB300;
   }
   .reason-3 {
-    border-left: 0.5px solid #424242;
-    border-right: 0.5px solid #424242;
+    border-left: 0.5px solid #FFB300;
+    border-right: 0.5px solid #FFB300
   }
   .stats {
     font-size: 1.1em;
@@ -922,8 +939,10 @@ export default {
     font-size: 3.5em;
     font-weight: 500;
     height: 4em;
-    margin-top: 5em;
-    padding: 0.5em 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0em;
+    padding: 0em 1em;
     text-align: center;
     width: 90%
   }
