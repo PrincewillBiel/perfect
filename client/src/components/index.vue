@@ -211,13 +211,13 @@ Perfect Funding is an investment management company that deals in cryptocurrency
     </v-layout>
   </v-flex>
 
-  <v-flex xs12 mt-3 style="background: #FFF">
+  <v-flex xs12 mt-3 class="white" color="white">
     <carousel :autoplay="true" :loop="true" :nav="false" :dots="false">
-      <div class="logos-1" style="background: #FFF"><img src="/static/img/standard.png"></div>
-      <div class="logos-2" style="background: #FFF"><img src="/static/img/citigroup.png"></div>
-      <div class="logos-3" style="background: #FFF"><img src="/static/img/berkshire.jpg"></div>
-      <div class="logos-4" style="background: #FFF"><img src="/static/img/bnp.png"></div>
-      <div class="logos-5" style="background: #FFF"><img src="/static/img/bitmain2.png"></div>
+      <div class="logos-1"><img src="/static/img/standard.png"></div>
+      <div class="logos-2"><img src="/static/img/citigroup.png"></div>
+      <div class="logos-3"><img src="/static/img/berkshire.jpg"></div>
+      <div class="logos-4"><img src="/static/img/bnp.png"></div>
+      <div class="logos-5"><img src="/static/img/bitmain2.png"></div>
     </carousel>
   </v-flex>
 
@@ -482,6 +482,9 @@ export default {
   margin: auto;
   padding: 0.5em;
   width: 90%;
+}
+.in-part {
+  background: #FFF
 }
 .intro h1 {
   font-size: 1.3em

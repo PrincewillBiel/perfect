@@ -248,6 +248,9 @@ html, body {
   width: 20%;
   height: 5em
 }
+.logos-1, .logos-2, .logos-3, .logos-4, .logos-5 {
+  background-color: #FFF
+}
 .logo-org {
   width: 50%;
   height: 6em
