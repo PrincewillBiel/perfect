@@ -96,10 +96,26 @@ export default {
   font-size: 1.2em;
   margin-left: 35%
 }
+.down{
+  background: #01579B;
+  height: 50%;
+  position: absolute;
+  width: 100%
+}
 .form-holder{
   margin: 13rem auto
 }
 .title{
   margin-left: 27%;
+}
+.up{
+  background: #FFF;
+  left: 50%;
+  position: absolute;
+  top: 60%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  width: 50%;
+  z-index: 401
 }
 </style>
