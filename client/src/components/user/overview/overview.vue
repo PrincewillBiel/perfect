@@ -68,7 +68,7 @@
       <v-card>
         <div class="headline calc"><b>ROI Calculator</b></div>
         <v-card-text>
-          <div style="font-size: 1.2em">This calculates the ROI for the each from the beginning to the end of the mining duration</div>
+          <div style="font-size: 1.2em">This calculates the ROI for the each from the beginning to the end of seven days</div>
           <v-text-field label="Enter Amount (Between 1000 and 100000)" v-model="principle" v-on:input="calc($event)"></v-text-field>
           <div class="slidecontainer">
             <input class="slider" type="range" v-bind:min="min" v-bind:max="max" v-on:input="onChg($event)" value="0">

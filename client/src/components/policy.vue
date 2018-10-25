@@ -1,4 +1,4 @@
-<template id="">
+﻿<template id="">
   <v-layout row wrap>
     <v-flex xs12 class="abt"><h1>OUR POLICIES</h1></v-flex>
     <v-flex xs12 class="about">

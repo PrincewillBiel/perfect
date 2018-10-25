@@ -210,7 +210,7 @@ export default {
   top: 60%;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
-  width: 50%;
+  width: 100%;
   z-index: 401
 }
 </style>

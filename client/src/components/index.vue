@@ -30,7 +30,7 @@
     </v-flex>
 
     <v-flex xs11 md6 mx-auto class="intro">
-      <h1 style="color: #0277BD; text-align: center"><b>Welcome to Perfect Funding LTD</b></h1>
+      <h1 style="color: #0277BD; text-align: center"><b>Welcome to Perfect Funding LTD.</b></h1>
       <div class="int">Perfect Funding is one of the highest paying bitcoin mining pool and cloud mining provider on the market, it is also one of the leading private investment firms providing asset management services on the internet including Bitcoin Mining Program, Cryptocurrency earning, exchange and crypto assets management.
 
 We offer professional investment solutions for all investor’s needs.
