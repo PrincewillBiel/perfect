@@ -211,13 +211,13 @@ Perfect Funding is an investment management company that deals in cryptocurrency
     </v-layout>
   </v-flex>
 
-  <v-flex xs12 mt-3 class="white" color="white">
+  <v-flex xs11 mt-3 mx-auto>
     <carousel :autoplay="true" :loop="true" :nav="false" :dots="false">
-      <div class="logos-1"><img src="/static/img/standard.png"></div>
-      <div class="logos-2"><img src="/static/img/citigroup.png"></div>
-      <div class="logos-3"><img src="/static/img/berkshire.jpg"></div>
-      <div class="logos-4"><img src="/static/img/bnp.png"></div>
-      <div class="logos-5"><img src="/static/img/bitmain2.png"></div>
+      <div class="test"><img src="/static/img/sc.jpg"></div>
+      <div class="test"><img src="/static/img/citigroup.png"></div>
+      <div class="test"><img src="/static/img/hathawaylogo.jpg"></div>
+      <div class="test"><img src="/static/img/bnp.png"></div>
+      <div class="test"><img src="/static/img/bitmain2.png"></div>
     </carousel>
   </v-flex>
 
@@ -263,8 +263,7 @@ export default {
         for good investment company with good weekly returns,
         swift withdrawal, and excellent support.`,
         `I have invested with many trading firms, but recently I was advised to try Perfect Funding.
-        I signed up and understood that this company is very good and they provide very
-        comfortable and flexible mining conditions.`,
+        I signed up this company is very good and they provide very good.`,
         `You know good opportunity when you see one, Perfect Funding,
         the perfect investment platform I have involved with.`
       ],
@@ -658,6 +657,12 @@ export default {
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover
+}
+.test {
+  height: 10em
+}
+.test img {
+  height: 100%
 }
 .testimonial{
   width: 100%;

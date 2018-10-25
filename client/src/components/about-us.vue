@@ -57,13 +57,15 @@ Happy Investing!
     </v-flex>
     <v-flex xs11 mx-auto class="partners">
       <h2>OUR PARTNERS</h2>
-      <carousel :autoplay="true" :loop="true" :nav="false" :dots="false">
-        <div class="logos-1"><img src="/static/img/standard.png"></div>
-        <div class="logos-2"><img src="/static/img/citigroup.png"></div>
-        <div class="logos-3"><img src="/static/img/berkshire.jpg"></div>
-        <div class="logos-4"><img src="/static/img/bnp.png"></div>
-        <div class="logos-5"><img src="/static/img/bitmain2.png"></div>
-      </carousel>
+      <div>
+        <carousel :autoplay="true" :loop="true" :nav="false" :dots="false">
+          <div class="test"><img src="/static/img/sc.jpg"></div>
+          <div class="test"><img src="/static/img/citigroup.png"></div>
+          <div class="test"><img src="/static/img/hathawaylogo.jpg"></div>
+          <div class="test"><img src="/static/img/bnp.png"></div>
+          <div class="test"><img src="/static/img/bitmain2.png"></div>
+        </carousel>
+      </div>
     </v-flex>
     <page-footer />
   </v-layout>
@@ -116,6 +118,12 @@ export default {
   margin-top: 1em;
   font-size: 2.5em;
   margin-bottom: 0.5em
+}
+.test {
+  height: 10em
+}
+.test img {
+  height: 100%
 }
 @media (min-width: 400px) {
   .photo img{
