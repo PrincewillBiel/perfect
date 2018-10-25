@@ -24,7 +24,7 @@
       <v-toolbar class="head" style="background: #0288D1" flat dense>
         <v-toolbar-title class="white--text title">NEW PASSWORD</v-toolbar-title>
       </v-toolbar>
-      <div class="pl-4 pr-4 pt-2 pb-2">
+      <div class="pl-3 pr-4 pt-2 pb-2">
         <form autocomplete="off">
           <v-text-field label="New Password" type="password" v-model="password" autocomplete="new-password"></v-text-field>
           <v-text-field label="Confirm Password" type="password" v-model="confirm" autocomplete="new-password"></v-text-field>

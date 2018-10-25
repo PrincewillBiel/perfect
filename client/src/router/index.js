@@ -56,7 +56,7 @@ export default new Router({
       component: loadView(`reset`)
     },
     // {
-    //   path: '/new_password_efs_login',
+    //   path: '/new_password_pf_login',
     //   name: 'Link',
     //   component: loadView(`reset_link`)
     // },
