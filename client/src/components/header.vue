@@ -41,6 +41,8 @@
             <v-btn flat style="color: #0277BD" @click="navigateTo({name: 'About'})">About Us</v-btn>
             <v-divider></v-divider>
             <v-btn flat style="color: #0277BD" @click="navigateTo({name: 'Policy'})">Our Policies</v-btn>
+            <v-divider></v-divider>
+            <v-btn flat style="color: #0277BD" @click="navigateTo({name: 'FAQ'})">FAQs and Answers</v-btn>
           </v-card>
         </v-menu>
         <div class="">
@@ -57,6 +59,7 @@
         <ul>
           <li><a class="link" @click="navigateTo({name: 'About'})">About Us</a></li>
           <li><a class="link" @click="navigateTo({name: 'Policy'})">Our Policies</a></li>
+          <li><a class="link" @click="navigateTo({name: 'FAQ'})">FAQs and Answers</a></li>
         </ul>
       </div>
       <a class="link" v-if="!$store.state.isUserLoggedIn" @click="navigateTo({name: 'Signup'})">Register</a>

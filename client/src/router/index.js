@@ -26,6 +26,11 @@ export default new Router({
       component: loadView(`dashboard`)
     },
     {
+      path: '/faqs',
+      name: 'FAQ',
+      component: loadView(`faq`)
+    },
+    {
       path: '/markets/nfp',
       name: 'NFP',
       component: loadView(`test`)

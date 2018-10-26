@@ -216,8 +216,6 @@ export default {
         x.style.display = 'none'
       } else {
         x.style.display = 'block'
-        // x.style.background = '#FFF'
-        // x.style.co
       }
     },
     account () {
