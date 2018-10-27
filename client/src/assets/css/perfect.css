@@ -203,7 +203,7 @@ html, body {
   position: relative;
   background: #FFF;
   overflow: hidden;
-  font-size: 1.3em;
+  font-size: 1em;
   padding: 2em 1em;
   text-align: justify;
   white-space: pre-wrap;
@@ -354,7 +354,7 @@ html, body {
     margin: 0
   }
   .intro {
-    font-size: 1.3em;
+    font-size: 1.1em;
     padding: 2em
   }
   .inv, .inv-alt {

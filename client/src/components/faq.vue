@@ -64,7 +64,7 @@
           </div>
         </v-flex>
         <v-flex xs12 mt-3 class="holden">
-          <a id="ninth" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop9()">WHAT IS THE BEST TIME TO CHOOSE FOR INVESTMENT?</a>
+          <a id="ninth" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop9()">DO I NEED TO PROVIDE ANY DOCUMENTS TO MAKE WITHDRAWALS?</a>
           <div v-show="accordion9" class="faq">
             On suspected security breaches, Yes. You need to verify your identity in order to withdraw funds. Account verification is necessary in order to prevent fraudulent financial transactions on the account.
           </div>
