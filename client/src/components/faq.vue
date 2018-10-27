@@ -1,59 +1,60 @@
 <template id="">
   <v-layout row wrap>
-    <v-flex xs12 class="abt"><h1>ABOUT US</h1></v-flex>
-    <v-flex xs11 md5 mx-auto mt-4>
-      <h2 style="text-align: center">General Questions</h2>
+    <v-flex xs12 class="abt"><h1>FREQUENTLY ASKED QUESTIONS</h1></v-flex>
+    <v-flex xs11 md10 mx-auto my-4><h2 style="text-align: center; color: #0277BD">QUESTIONS YOU MIGHT WANT TO ASK</h2></v-flex>
+    <v-flex xs11 sm7 md5 mx-auto mt-4>
+      <h2 style="color: #040D14">General Questions</h2>
       <v-layout row wrap>
-        <v-flex xs12 mt-3 class="holden">
+        <v-flex xs12 mt-4 class="holden">
           <a id="first" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop1()">WHAT IS PERFECT FUNDING?</a>
           <div v-show="accordion1" class="faq">
-            Perfect Funding is a cryptocurrency mining investment platform that makes it easy for you to start your journey as a investor. Our graphical tools and convenient technical analysis indicators help you make trading decisions.
+            Perfect Funding is a cryptocurrency mining investment platform that makes it easy for you to start your journey as a investor. Our graphical tools and convenient technical analysis indicators help you make investment decisions.
           </div>
         </v-flex>
         <v-flex xs12 mt-3 class="holden">
           <a id="second" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop2()">HOW MUCH MONEY CAN I MAKE?</a>
           <div v-show="accordion2" class="faq">
-            Your success depends on your skills and patience, your chosen trading strategy, and the amount you are able to invest. We recommend watching our training videos first, so you can make more informed transactions. Beginning traders can try out their skills and practice on the practice account.
-          </div>
-        </v-flex>
-        <v-flex xs12 mt-3 class="holden">
-          <a id="third" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop3()">WHAT IS THE BEST TIME TO CHOOSE FOR INVESTMENT?</a>
-          <div v-show="accordion3" class="faq">
-            The best trading time depends on your trading strategy and a few other factors. We recommend that you pay attention to the market schedules, since the overlap of the American and European trading sessions makes prices more dynamic in currency pairs such as EUR/USD. You should also follow market news that might affect the movement of your chosen asset. It's better not to trade when prices are highly dynamic for inexperienced traders who don't follow the news and don't understand why the price is fluctuating.
+            Your success depends on our strategic skills, your patience, your chosen investment plan and the amount you are able to invest. We recommend watching our mining basics videos first, so you can make more informed transactions. Beginning traders can try out their skills and practice on the practice account.
           </div>
         </v-flex>
       </v-layout>
     </v-flex>
-    <v-flex xs11 md5 mx-auto mt-3>
-      <h2 style="text-align: center">Mining</h2>
+    <v-flex xs11 sm7 md5 mx-auto mt-4>
+      <h2 style="color: #040D14">Mining</h2>
       <v-layout row wrap>
-        <v-flex xs12 mt-4 class="holden">
-          <a id="fourth" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop4()">WHAT IS PERFECT FUNDING?</a>
+        <v-flex xs12 mt-3 class="holden">
+          <a id="fourth" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop4()">HOW DOES IT WORK?</a>
           <div v-show="accordion4" class="faq">
-            Perfect Funding is a cryptocurrency mining investment platform that makes it easy for you to start your journey as a investor. Our graphical tools and convenient technical analysis indicators help you make trading decisions.
+            After registering for an account with the company and funded it according to preferred package, you will be connected to an Antminer robot network pool where your investment returns are being generated from and automatically sent straight into your bitcoin wallet in due time of mining duration of the package activated.
           </div>
         </v-flex>
         <v-flex xs12 mt-3 class="holden">
-          <a id="fifth" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop5()">HOW MUCH MONEY CAN I MAKE?</a>
+          <a id="fifth" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop5()">WHAT ARE MINING HASH RATES?</a>
           <div v-show="accordion5" class="faq">
-            Your success depends on your skills and patience, your chosen trading strategy, and the amount you are able to invest. We recommend watching our training videos first, so you can make more informed transactions. Beginning traders can try out their skills and practice on the practice account.
+            <img src="/static/img/hashrate.jpg" alt="">
           </div>
         </v-flex>
         <v-flex xs12 mt-3 class="holden">
-          <a id="sixth" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop6()">WHAT IS THE BEST TIME TO CHOOSE FOR INVESTMENT?</a>
+          <a id="sixth" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop6()">IS THERE ANY COMMISSION FOR INACTIVE ACCOUNTS?</a>
           <div v-show="accordion6" class="faq">
-            The best trading time depends on your trading strategy and a few other factors. We recommend that you pay attention to the market schedules, since the overlap of the American and European trading sessions makes prices more dynamic in currency pairs such as EUR/USD. You should also follow market news that might affect the movement of your chosen asset. It's better not to trade when prices are highly dynamic for inexperienced traders who don't follow the news and don't understand why the price is fluctuating.
+            If you don't perform any operations on the platform for 90 days and there is some amount of money remaining on your account, we deduct a $50 fee for servicing the inactive account, but not more than the total of your mining balance. For example, if there's 0.4 USD on your account, not more than 0.4 USD can be charged.
+          </div>
+        </v-flex>
+        <v-flex xs12 mt-3 class="holden">
+          <a id="tenth" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop10()">DISCLOSURE</a>
+          <div v-show="accordion10" class="faq">
+            Mining equipment metrics are calculated based on a network hash rate of 51,417,644,205 GH/s and using a BTC - USD exchange rate of 1 BTC = $ 6460.17. These figures vary based on the total network hash rate and on the BTC to USD conversion rate. Equipment cost can vary, block reward is fixed at 12.5 BTC . Future block reward and hash rate changes are not taken into account. The electricity price used in generating these metrics is $ 0.12 per kWh. Network hash rate varies over time, this is just an estimation based on current values.
           </div>
         </v-flex>
       </v-layout>
     </v-flex>
-    <v-flex xs11 sm5 mt-5 mx-auto>
-      <h2 style="text-align: center">Funds Withdrawal</h2>
+    <v-flex xs11 sm7 md5 mt-4 mx-auto>
+      <h2 style="color: #040D14">Funds Withdrawal</h2>
       <v-layout row wrap>
         <v-flex xs12 mt-3 class="holden">
           <a id="seventh" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop7()">HOW DO I WITHDRAW MONEY?</a>
           <div v-show="accordion7" class="faq">
-            To withdraw your money, go to Withdraw Funds. You will see a list of large icons representing available methods of withdrawal. Choose a method, enter the amount and other information, and click "Withdraw Funds". Your request will be handled within a day or two and you will receive your earnings.
+            To withdraw your money, go to Withdraw Funds. Enter the amount you want to withdraw, the description of the fund (investment or referral bonus) and your wallet address. Your request will be handled within a day or two and you will receive your earnings.
           </div>
         </v-flex>
         <v-flex xs12 mt-3 class="holden">
@@ -65,12 +66,12 @@
         <v-flex xs12 mt-3 class="holden">
           <a id="ninth" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop9()">WHAT IS THE BEST TIME TO CHOOSE FOR INVESTMENT?</a>
           <div v-show="accordion9" class="faq">
-            Yes. You need to verify your identity in order to withdraw funds. Account verification is necessary in order to prevent fraudulent financial transactions on the account.
+            On suspected security breaches, Yes. You need to verify your identity in order to withdraw funds. Account verification is necessary in order to prevent fraudulent financial transactions on the account.
           </div>
         </v-flex>
       </v-layout>
     </v-flex>
-    <v-flex xs11 sm5 mt-5 mx-auto></v-flex>
+    <v-flex xs11 md5 my-4 mx-auto></v-flex>
     <v-flex xs11 mx-auto class="partners">
       <div>
         <carousel :autoplay="true" :loop="true" :nav="false" :dots="false">
@@ -95,13 +96,13 @@ export default {
     return {
       accordion1: false,
       accordion2: false,
-      accordion3: false,
       accordion4: false,
       accordion5: false,
       accordion6: false,
       accordion7: false,
       accordion8: false,
-      accordion9: false
+      accordion9: false,
+      accordion10: false
     }
   },
   mounted () {
@@ -223,6 +224,19 @@ export default {
           document.getElementById('ninth').style.color = '#FFF'
         }
       }
+    },
+    async drop10 () {
+      if (this.accordion10 === true) {
+        this.accordion10 = false
+        document.getElementById('tenth').style.background = '#E0E0E0'
+        document.getElementById('tenth').style.color = '#0277BD'
+      } else {
+        if (this.accordion10 === false) {
+          this.accordion10 = true
+          document.getElementById('tenth').style.background = '#0277BD'
+          document.getElementById('tenth').style.color = '#FFF'
+        }
+      }
     }
   },
   components: {
@@ -236,14 +250,27 @@ export default {
   border: 1px solid #FFB300;
   padding: 1em
 }
+.faq img {
+  width: 100%
+}
 .goody {
   display: inline-block;
+  font-size: 0.9em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
   text-align: center;
   text-decoration: none;
   width: 100%
 }
+.test {
+  height: 10em
+}
+.test img {
+  height: 100%
+}
 @media (min-width: 600px) {
   .goody {
+    font-size: 1em;
   }
 }
 @media (min-width: 800px) {
@@ -255,8 +282,8 @@ export default {
     font-size: 1.2em
   }
   .goody {
-    padding-bottom: 0.5em;
-    padding-top: 0.5em
+    padding-bottom: 1em;
+    padding-top: 1em
   }
   .holden {
   }

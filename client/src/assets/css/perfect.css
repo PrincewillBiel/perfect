@@ -5,8 +5,8 @@ html, body {
   position: relative;
   background: #0277BD;
   overflow: hidden;
-  padding: 1em;
-  height: 6em;
+  padding: 0.5em 1em;
+  height: 7em;
 }
 .abt:before {
   content: '';
@@ -28,7 +28,7 @@ html, body {
   background-size: cover
 }
 .abt h1 {
-  color: #FFEA00;
+  color: #FFB300;
   z-index: 1;
   position: relative;
   font-size: 1.5em;
@@ -206,7 +206,6 @@ html, body {
   font-size: 1.3em;
   padding: 2em 1em;
   text-align: justify;
-  text-justify: inter-word;
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
   white-space: -pre-wrap;

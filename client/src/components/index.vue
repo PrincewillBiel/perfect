@@ -94,6 +94,7 @@ Join us now and we will share our success with you! Happy Investing!
           <div class="inv">Maximum Deposit: $9000</div>
           <div class="inv">Money-back Guarantee: 100%</div>
           <div class="inv">Referral Bonus: 5%</div>
+          <div class="inv-alt">Instant automatic withdrawal into your wallet</div>
         </div>
       </v-flex>
       <v-flex xs11 sm5 md4 mx-auto class="listing-div" style="background: #040D14">
@@ -104,6 +105,7 @@ Join us now and we will share our success with you! Happy Investing!
           <div class="inv-alt">Maximum Deposit: $49000</div>
           <div class="inv-alt">Money-back Guarantee: 100%</div>
           <div class="inv-alt">Referral Bonus: 10%</div>
+          <div style="color: #0277BD" class="inv">Instant automatic withdrawal into your wallet</div>
         </div>
       </v-flex>
       <v-flex xs11 sm5 md4 mx-auto class="listing-div" style="background: #0277BD">
@@ -114,16 +116,18 @@ Join us now and we will share our success with you! Happy Investing!
           <div class="inv">Maximum Deposit: $90000</div>
           <div class="inv">Money-back Guarantee: 100%</div>
           <div class="inv">Referral Bonus: 15%</div>
+          <div class="inv-alt">Instant automatic withdrawal into your wallet</div>
         </div>
       </v-flex>
       <v-flex xs11 sm5 md4 mx-auto class="listing-div" style="background: #040D14">
         <h2 style="color: #FFB300">LIFETIME</h2>
-        <h3 style="color: #0277BD; text-align: center">10% Weekly Profit</h3>
+        <h3 style="color: #0277BD; text-align: center">10% Daily Profit</h3>
         <div>
           <div class="inv-alt">Minimum Deposit: $100000</div>
           <div class="inv-alt">Maximum Deposit: Varied</div>
           <div class="inv-alt">Mining Duration: 365 Days</div>
           <div class="inv-alt">Referral Bonus: 20%</div>
+          <div style="color: #0277BD" class="inv">Instant automatic withdrawal into your wallet</div>
         </div>
       </v-flex>
       <v-flex xs11 sm5 md4 mx-auto class="listing-div" style="background: #0277BD; padding-left: 2%">
@@ -132,6 +136,7 @@ Join us now and we will share our success with you! Happy Investing!
           <div class="inv-alt">Deposit: 1 BTC to earn 0.5BTC</div>
           <div class="inv-alt">Mining Duration: 24 hours for 30 Days</div>
           <div class="inv-alt" style="color: #040D14">Contact support if interested in this plan.</div>
+          <div class="inv-alt">Instant automatic withdrawal into your wallet</div>
         </div>
       </v-flex>
     </v-layout>
@@ -186,7 +191,7 @@ Perfect Funding is an investment management company that deals in cryptocurrency
       <v-flex xs11 sm6 md4  mx-auto class="reason reason-2 reason-3 reason-4">
         <h2>HIGH ROI</h2>
         <span><i class="fas fa-chart-line"></i></span>
-        <div class="">With our clever trading tactics and smart systems, high return on investment is assured.</div>
+        <div class="">With our smart systems, high return on investment is assured.</div>
       </v-flex>
       <v-flex xs11 sm6 md4  mx-auto class="reason reason-1 reason-2 reason-4">
         <h2>GUARANTEED RETURNS</h2>
@@ -495,7 +500,7 @@ export default {
 }
 .listing-div {
   border: 1px solid #FFB300;
-  height: 17em;
+  height: 20em;
   margin-bottom: 1.5em;
   padding-top: 1em
 }
@@ -851,7 +856,7 @@ export default {
     padding-top: 4em
   }
   .listing-div {
-    height: 22em;
+    height: 26em;
     padding-top: 1em
   }
   .listing div {
