@@ -4,7 +4,7 @@
       <div class="location">
         <ul>
           <li><i class="fas fa-envelope"></i> support@perfectfunding.org</li>
-          <li><i class="fas fa-map-marker-alt"></i> 1711 Franklin Street, Opelika, Alabama.</li>
+          <li><i class="fas fa-map-marker-alt"></i> 1910 Thompson drive, Oakland, CA 94612, United States.</li>
           <li><i class="fas fa-mobile-alt"></i> +1 (334) 819-1740</li>
         </ul>
       </div>
