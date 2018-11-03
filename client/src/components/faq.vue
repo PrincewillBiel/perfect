@@ -17,6 +17,12 @@
             Your success depends on our strategic skills, your patience, your chosen investment plan and the amount you are able to invest. We recommend watching our mining basics videos first, so you can make more informed transactions. Beginning traders can try out their skills and practice on the practice account.
           </div>
         </v-flex>
+        <v-flex xs12 mt-3 class="holden">
+          <a id="third" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop3()">HOW SAFE IS THIS WEBSITE?</a>
+          <div v-show="accordion3" class="faq">
+            Our data centers are located on multiple locations around the world to make sure that our system has 100% uptime with zero chance for a transaction to fail. Our website is CDN powered, SSL secured and protected against DDoS attacks to make sure your stay on our website is completely safe.
+          </div>
+        </v-flex>
       </v-layout>
     </v-flex>
     <v-flex xs11 sm7 md5 mx-auto mt-4>
@@ -41,8 +47,14 @@
           </div>
         </v-flex>
         <v-flex xs12 mt-3 class="holden">
-          <a id="tenth" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop10()">DISCLOSURE</a>
-          <div v-show="accordion10" class="faq">
+          <a id="seventh" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop7()">WHY THE MINIMUM OF $1,000?</a>
+          <div v-show="accordion7" class="faq">
+          Considering the tight security system against hacking and the level of fully equipped tools, the mining network pool functions more effectively on surplus deposits in order to generate profits more efficiently and fast enough to meet the maximum satisfaction of our clients day in day out.That’s the company’s standard.
+          </div>
+        </v-flex>
+        <v-flex xs12 mt-3 class="holden">
+          <a id="eighth" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop8()">DISCLOSURE</a>
+          <div v-show="accordion8" class="faq">
             Mining equipment metrics are calculated based on a network hash rate of 51,417,644,205 GH/s and using a BTC - USD exchange rate of 1 BTC = $ 6460.17. These figures vary based on the total network hash rate and on the BTC to USD conversion rate. Equipment cost can vary, block reward is fixed at 12.5 BTC . Future block reward and hash rate changes are not taken into account. The electricity price used in generating these metrics is $ 0.12 per kWh. Network hash rate varies over time, this is just an estimation based on current values.
           </div>
         </v-flex>
@@ -52,32 +64,33 @@
       <h2 style="color: #040D14">Funds Withdrawal</h2>
       <v-layout row wrap>
         <v-flex xs12 mt-3 class="holden">
-          <a id="seventh" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop7()">HOW DO I WITHDRAW MONEY?</a>
-          <div v-show="accordion7" class="faq">
+          <a id="ninth" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop9()">HOW DO I WITHDRAW MONEY?</a>
+          <div v-show="accordion9" class="faq">
             To withdraw your money, go to Withdraw Funds. Enter the amount you want to withdraw, the description of the fund (investment or referral bonus) and your wallet address. Your request will be handled within a day or two and you will receive your earnings.
           </div>
         </v-flex>
         <v-flex xs12 mt-3 class="holden">
-          <a id="eighth" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop8()">HOW LONG DOES IT TAKE TO WITHDRAW FUNDS?</a>
-          <div v-show="accordion8" class="faq">
+          <a id="tenth" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop10()">HOW LONG DOES IT TAKE TO WITHDRAW FUNDS?</a>
+          <div v-show="accordion10" class="faq">
             We aim to process all withdrawal requests within 3 business days. Please keep in mind that the payment service provider may require more time to complete the process depending on the payment method.
           </div>
         </v-flex>
         <v-flex xs12 mt-3 class="holden">
-          <a id="ninth" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop9()">DO I NEED TO PROVIDE ANY DOCUMENTS TO MAKE WITHDRAWALS?</a>
-          <div v-show="accordion9" class="faq">
+          <a id="eleventh" class="goody" style="background: #E0E0E0" href="javascript:void(0)" @click="drop11()">DO I NEED TO PROVIDE ANY DOCUMENTS TO MAKE WITHDRAWALS?</a>
+          <div v-show="accordion11" class="faq">
             On suspected security breaches, Yes. You need to verify your identity in order to withdraw funds. Account verification is necessary in order to prevent fraudulent financial transactions on the account.
           </div>
         </v-flex>
       </v-layout>
     </v-flex>
-    <v-flex xs11 md5 my-4 mx-auto></v-flex>
-    <v-flex xs11 mx-auto class="partners">
+    <v-flex xs11 md5 my-5 mx-auto></v-flex>
+    <v-flex xs11 mx-auto mt-5 class="partners">
       <div>
-        <carousel :autoplay="true" :loop="true" :nav="false" :dots="false">
+        <carousel :autoplay="true" :loop="true" :nav="false" :dots="false" :items="4">
           <div class="test"><img src="/static/img/sc.jpg"></div>
           <div class="test"><img src="/static/img/citigroup.png"></div>
           <div class="test"><img src="/static/img/hathawaylogo.jpg"></div>
+          <div class="test"><img src="/static/img/barclays.jpg"></div>
           <div class="test"><img src="/static/img/bnp.png"></div>
           <div class="test"><img src="/static/img/bitmain2.png"></div>
         </carousel>
@@ -96,13 +109,15 @@ export default {
     return {
       accordion1: false,
       accordion2: false,
+      accordion3: false,
       accordion4: false,
       accordion5: false,
       accordion6: false,
       accordion7: false,
       accordion8: false,
       accordion9: false,
-      accordion10: false
+      accordion10: false,
+      accordion11: false
     }
   },
   mounted () {
@@ -235,6 +250,19 @@ export default {
           this.accordion10 = true
           document.getElementById('tenth').style.background = '#0277BD'
           document.getElementById('tenth').style.color = '#FFF'
+        }
+      }
+    },
+    async drop11 () {
+      if (this.accordion11 === true) {
+        this.accordion11 = false
+        document.getElementById('eleventh').style.background = '#E0E0E0'
+        document.getElementById('eleventh').style.color = '#0277BD'
+      } else {
+        if (this.accordion11 === false) {
+          this.accordion11 = true
+          document.getElementById('eleventh').style.background = '#0277BD'
+          document.getElementById('eleventh').style.color = '#FFF'
         }
       }
     }

@@ -95,6 +95,10 @@ Join us now and we will share our success with you! Happy Investing!
           <div class="inv">Money-back Guarantee: 100%</div>
           <div class="inv">Referral Bonus: 5%</div>
           <div class="inv-alt">Instant automatic withdrawal into your wallet</div>
+          <div class="bholder">
+            <v-btn ripple style="background: #0277BD; border: 1px solid #FFB300; color: #FFB300; font-weight: 1000" v-if="!$store.state.isUserLoggedIn" @click="navigateTo({name: 'Signup'})">Start Earning!</v-btn>
+            <v-btn ripple style="background: #0277BD; border: 1px solid #FFB300; color: #FFB300" v-if="$store.state.isUserLoggedIn" @click="navigateTo({name: 'Dashboard'})">Start Earning!</v-btn>
+          </div>
         </div>
       </v-flex>
       <v-flex xs11 sm5 md4 mx-auto class="listing-div" style="background: #040D14">
@@ -106,6 +110,10 @@ Join us now and we will share our success with you! Happy Investing!
           <div class="inv-alt">Money-back Guarantee: 100%</div>
           <div class="inv-alt">Referral Bonus: 10%</div>
           <div style="color: #0277BD" class="inv">Instant automatic withdrawal into your wallet</div>
+          <div class="bholder">
+            <v-btn ripple style="background: #0277BD; border: 1px solid #FFB300; color: #FFB300; font-weight: 1000" v-if="!$store.state.isUserLoggedIn" @click="navigateTo({name: 'Signup'})">Start Earning!</v-btn>
+            <v-btn ripple style="background: #0277BD; border: 1px solid #FFB300; color: #FFB300" v-if="$store.state.isUserLoggedIn" @click="navigateTo({name: 'Dashboard'})">Start Earning!</v-btn>
+          </div>
         </div>
       </v-flex>
       <v-flex xs11 sm5 md4 mx-auto class="listing-div" style="background: #0277BD">
@@ -117,6 +125,10 @@ Join us now and we will share our success with you! Happy Investing!
           <div class="inv">Money-back Guarantee: 100%</div>
           <div class="inv">Referral Bonus: 15%</div>
           <div class="inv-alt">Instant automatic withdrawal into your wallet</div>
+          <div class="bholder">
+            <v-btn ripple style="background: #0277BD; border: 1px solid #FFB300; color: #FFB300; font-weight: 1000" v-if="!$store.state.isUserLoggedIn" @click="navigateTo({name: 'Signup'})">Start Earning!</v-btn>
+            <v-btn ripple style="background: #0277BD; border: 1px solid #FFB300; color: #FFB300" v-if="$store.state.isUserLoggedIn" @click="navigateTo({name: 'Dashboard'})">Start Earning!</v-btn>
+          </div>
         </div>
       </v-flex>
       <v-flex xs11 sm5 md4 mx-auto class="listing-div" style="background: #040D14">
@@ -128,6 +140,10 @@ Join us now and we will share our success with you! Happy Investing!
           <div class="inv-alt">Mining Duration: 365 Days</div>
           <div class="inv-alt">Referral Bonus: 20%</div>
           <div style="color: #0277BD" class="inv">Instant automatic withdrawal into your wallet</div>
+          <div class="bholder">
+            <v-btn ripple style="background: #0277BD; border: 1px solid #FFB300; color: #FFB300; font-weight: 1000" v-if="!$store.state.isUserLoggedIn" @click="navigateTo({name: 'Signup'})">Start Earning!</v-btn>
+            <v-btn ripple style="background: #0277BD; border: 1px solid #FFB300; color: #FFB300" v-if="$store.state.isUserLoggedIn" @click="navigateTo({name: 'Dashboard'})">Start Earning!</v-btn>
+          </div>
         </div>
       </v-flex>
       <v-flex xs11 sm5 md4 mx-auto class="listing-div" style="background: #0277BD; padding-left: 2%">
@@ -137,6 +153,10 @@ Join us now and we will share our success with you! Happy Investing!
           <div class="inv-alt">Mining Duration: 24 hours for 30 Days</div>
           <div class="inv-alt" style="color: #040D14">Contact support if interested in this plan.</div>
           <div class="inv-alt">Instant automatic withdrawal into your wallet</div>
+          <div class="bholder">
+            <v-btn ripple style="background: #0277BD; border: 1px solid #FFB300; color: #FFB300; font-weight: 1000" v-if="!$store.state.isUserLoggedIn" @click="navigateTo({name: 'Signup'})">Start Earning!</v-btn>
+            <v-btn ripple style="background: #0277BD; border: 1px solid #FFB300; color: #FFB300" v-if="$store.state.isUserLoggedIn" @click="navigateTo({name: 'Dashboard'})">Start Earning!</v-btn>
+          </div>
         </div>
       </v-flex>
     </v-layout>
@@ -196,7 +216,7 @@ Perfect Funding is an investment management company that deals in cryptocurrency
       <v-flex xs11 sm6 md4  mx-auto class="reason reason-1 reason-2 reason-4">
         <h2>GUARANTEED RETURNS</h2>
         <span><i class="fas fa-hand-holding-usd"></i></span>
-        <div class="">With our Risk transfer and Insurances on check, we understand all risk and measures needed to handle your investments.</div>
+        <div class="">With our no-risk transfer and insurances on check, we understand all risk and measures needed to handle your investments.</div>
       </v-flex>
       <v-flex xs11 sm6 md4  mx-auto class="reason reason-4">
         <h2>QUICK WITHDRAWALS</h2>
@@ -206,7 +226,7 @@ Perfect Funding is an investment management company that deals in cryptocurrency
       <v-flex xs11 sm6 md4  mx-auto class="reason reason-1 reason-3">
         <h2>ROUND THE CLOCK SUPPORT</h2>
         <span><i class="fas fa-user-clock"></i></span>
-        <div class="">Our Online support team are ready to assist you 24/7.</div>
+        <div class="">Our Online support team are ready to assist you 24 hours a day, 7 days a week.</div>
       </v-flex>
       <v-flex xs11 sm6 md4  mx-auto class="reason">
         <h2>FULLY-FEATURED</h2>
@@ -217,10 +237,11 @@ Perfect Funding is an investment management company that deals in cryptocurrency
   </v-flex>
 
   <v-flex xs11 mt-3 mx-auto>
-    <carousel :autoplay="true" :loop="true" :nav="false" :dots="false">
+    <carousel :autoplay="true" :loop="true" :nav="false" :dots="false" :items="4">
       <div class="test"><img src="/static/img/sc.jpg"></div>
       <div class="test"><img src="/static/img/citigroup.png"></div>
       <div class="test"><img src="/static/img/hathawaylogo.jpg"></div>
+      <div class="test"><img src="/static/img/barclays.jpg"></div>
       <div class="test"><img src="/static/img/bnp.png"></div>
       <div class="test"><img src="/static/img/bitmain2.png"></div>
     </carousel>
@@ -340,6 +361,10 @@ export default {
 }
 .anime{
   width: 100%
+}
+.bholder {
+  margin-left: 14%;
+  margin-top: 1em
 }
 .ca-btn {
   border: 1px solid #FFB300;
@@ -500,7 +525,7 @@ export default {
 }
 .listing-div {
   border: 1px solid #FFB300;
-  height: 20em;
+  height: 25em;
   margin-bottom: 1.5em;
   padding-top: 1em
 }
@@ -806,6 +831,9 @@ export default {
   .alt, .div{
     padding: 5em 0;
   }
+  .bholder {
+    margin-left: 18%
+  }
   .ca-btn {
     border: 1px solid #FFB300;
     height: 3em;
@@ -856,7 +884,7 @@ export default {
     padding-top: 4em
   }
   .listing-div {
-    height: 26em;
+    height: 30em;
     padding-top: 1em
   }
   .listing div {

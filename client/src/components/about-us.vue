@@ -43,7 +43,14 @@ Happy Investing!
           <img src="/static/img/cpo.jpg" alt="">
           <div class="bio">
             <h3 class="name">Wayne Elliston</h3>
-            <i>Co-founder & Chief Product Officer</i>
+            <i>Accounts and Finance Manager</i>
+          </div>
+        </v-flex>
+        <v-flex xs9 sm3 md2 mx-auto class="photo">
+          <img src="/static/img/sm.jpeg" alt="">
+          <div class="bio">
+            <h3 class="name">Crystal Siddiqui</h3>
+            <i>Head of Strategy and Marketing</i>
           </div>
         </v-flex>
         <v-flex xs9 sm3 md2 mx-auto class="photo">
@@ -58,10 +65,11 @@ Happy Investing!
     <v-flex xs11 mx-auto class="partners">
       <h2>OUR PARTNERS</h2>
       <div>
-        <carousel :autoplay="true" :loop="true" :nav="false" :dots="false">
+        <carousel :autoplay="true" :loop="true" :nav="false" :dots="false" :items="4">
           <div class="test"><img src="/static/img/sc.jpg"></div>
           <div class="test"><img src="/static/img/citigroup.png"></div>
           <div class="test"><img src="/static/img/hathawaylogo.jpg"></div>
+          <div class="test"><img src="/static/img/barclays.jpg"></div>
           <div class="test"><img src="/static/img/bnp.png"></div>
           <div class="test"><img src="/static/img/bitmain2.png"></div>
         </carousel>
