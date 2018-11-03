@@ -24,6 +24,7 @@
             <li v-if="$store.state.isUserLoggedIn"><a @click="navigateTo({name: 'Dashboard'})">Dashboard</a></li>
             <li><a @click="navigateTo({name: 'Policy'})">Our Policies</a></li>
             <li><a @click="navigateTo({name: 'About'})">About Us</a></li>
+            <li><a @click="navigateTo({name: 'FAQ'})">FAQs and Answers</a></li>
           </ul>
         </v-flex>
       </v-layout>

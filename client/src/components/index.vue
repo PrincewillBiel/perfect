@@ -211,7 +211,7 @@ Perfect Funding is an investment management company that deals in cryptocurrency
       <v-flex xs11 sm6 md4  mx-auto class="reason reason-2 reason-3 reason-4">
         <h2>HIGH ROI</h2>
         <span><i class="fas fa-chart-line"></i></span>
-        <div class="">With our smart systems, high return on investment is assured.</div>
+        <div class="">With our smart systems, high return on investment is guaranteed.</div>
       </v-flex>
       <v-flex xs11 sm6 md4  mx-auto class="reason reason-1 reason-2 reason-4">
         <h2>GUARANTEED RETURNS</h2>
