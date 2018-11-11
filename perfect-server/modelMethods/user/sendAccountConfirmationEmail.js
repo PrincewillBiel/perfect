@@ -17,7 +17,7 @@ module.exports = function sendAccountConfirmationEmail() {
     }).send({
       to: [user.email],
       from: {
-        name: 'EFS',
+        name: 'Perfect Funding',
         email: 'no-reply@perfectfunding.org',
       },
       subject: 'Welcome',
